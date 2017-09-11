@@ -1,0 +1,171 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+.event-box{
+    margin-top:20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+    -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+}
+
+.event-name-date{
+    width: 35%;
+}
+.event-heading{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #273A4A;
+    color: #fff;
+    padding: 5px;
+}
+
+.event-date-time{
+    background-color: #1ab394;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    padding:5px;
+    text-align: center;
+}
+
+.duration{
+    margin: 0;
+}
+
+.event-day{
+    display: block;
+    font-size: 40px;
+}
+
+.event-details{
+    padding-top: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 65%;
+    height: 152px;
+}
+
+.event-details>p{
+    padding: 10px;
+}
+
+.attendee{
+    padding: 0 !important;
+}
+
+.event-option{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.feedback-date-box{
+    width: 200px;
+    padding-bottom: 24px;
+}
+.event-form{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    background-color: #fff;
+    padding: 20px 20px 50px 20px;
+}
+.location-dropdown{
+    background: none;
+    border: 1px solid #e5e6e7;
+}
+
+.not-interested-icon{
+    color: #f00;
+}
+
+.join-icon{
+    color: #32cd32;
+}
+
+.feedback-form{
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.41);
+    background-color: #fff;
+    padding: 20px 20px 50px 20px;
+    margin: 10px 100px 20px 100px;
+}
+
+textarea{
+    resize: none;
+}
+
+.rating-option{
+    padding-top: 20px;
+}
+
+.star-icon{
+    margin:0 10px;
+}
+
+.custom-dropdown{
+    height: 34px;
+    width: 208.3px;
+    border: 1px solid #c5d6e7;
+    padding-left: 10px;
+}
+
+.rating {
+    float:left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+

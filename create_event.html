@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to Learnings - To The New</title>
+    <link rel="icon" type="image/x-ico" href="img/ttnFavicon.ico"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/design.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html">
+                            <span class="clear"> <span class="block m-t-xs"> <strong
+                                    class="font-bold">To The New</strong>
+                             </span> <span class="text-muted text-xs block">Hello Newer</span> </span> </a>
+                    </div>
+                    <div class="logo-element">
+                        GC
+                    </div>
+                </li>
+                <li class="active">
+                    <a href=""><i class="fa fa-calendar" title="Events"></i> <span class="nav-label">Events</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="create_event.html">Create Event</a></li>
+                        <li><a href="list_of_event.html">List of Events</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="feedback.html"><i class="fa fa-book" title="Feedback"></i> <span
+                            class="nav-label">Feedback</span> </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+                    <form role="search" class="navbar-form-custom" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for events..." class="form-control" name="top-search"
+                                   id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-md-offset-2">
+                    <form action="" class="event-form">
+                        <div class="form-group">
+                            <label for="event">Event Name:</label>
+                            <input type="text" class="form-control" id="event" placeholder="Enter title of the Event"
+                                   name="event">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presenter">Presenter Name:</label>
+                            <input type="text" class="form-control" id="presenter" placeholder="Enter Presenter Name"
+                                   name="presenter">
+                        </div>
+
+                        <div class="form-group clearfix">
+                            <div class="col-md-4" style="padding-left: 0;">
+                                <label for="datetime">Date & Time:</label>
+                                <input type="datetime-local" class="form-control" id="datetime"
+                                       placeholder="Select Date & Time" name="datetime">
+                                <i class="fa fa-calendar" style="position: absolute; top:33px; right: 25px"></i>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dropdown">
+                                    <label>Location:</label><br/>
+                                    <select class="custom-dropdown">
+                                        <option value="">Select Location</option>
+                                        <option value="">Las Angles</option>
+                                        <option value="">Berlin</option>
+                                        <option value="">Chennai</option>
+                                        <option value="">Mumbai</option>
+                                        <option value="">Paris</option>
+                                        <option value="">San Francisco</option>
+                                        <option value="">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="dropdown">
+                                    <label>Competency:</label><br/>
+                                    <select class="custom-dropdown">
+                                        <option>Select Event's Competency</option>
+                                        <option value="">FEEN</option>
+                                        <option value="">MEAN</option>
+                                        <option value="">JVM</option>
+                                        <option value="">Drupal</option>
+                                        <option value="">DevOps</option>
+                                        <option value="">Testing</option>
+                                    </select>
+                                </div>
+                                <!--<label for="location">Location:</label>-->
+                                <!--<input type="text" class="form-control" id="location" placeholder="Select Location" name="location">-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="agenda">Add Agenda:</label>
+                            <textarea class="form-control" id="agenda" maxlength="150" placeholder="Enter Agenda Name"
+                                      name="agenda"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="prerequisite">Add Prerequisites Contents:</label>
+                            <textarea class="form-control" id="prerequisite" maxlength="150" placeholder="Prerequisites"
+                                      name="prerequisite"></textarea>
+                        </div>
+
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                <strong>Copyright</strong> To The New &copy; 2017
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>
